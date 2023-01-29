@@ -7,12 +7,13 @@ import {
   FlatList,
   ScrollView,
   Dimensions,
-  View,
+  View
 } from 'react-native';
 import NewsCard from './components/NewsCard';
 
 import news_data from './news_data.json';
 import news_banner_data from './news_banner_data.json';
+
 
 function App() {
   const renderNews = ({item}) => <NewsCard news={item} />;
@@ -26,7 +27,7 @@ function App() {
       <FlatList
         ListHeaderComponent={() => (
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            {news_banner_data.map (bannerNews => (
+            {news_banner_data.map(bannerNews => (
               <Image
                 style={styles.banner_image}
                 source={{uri: bannerNews.imageUrl}}
@@ -56,7 +57,6 @@ const styles = StyleSheet.create({
     fontSize: 50,
     fontStyle:'italic'
 
-    
   },
   headers:{
     alignItems:'center',
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor:'#e6e6fa',
     marginTop:20
 
-  }
+  },
 });
 
 export default App;
