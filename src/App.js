@@ -26,7 +26,7 @@ function App() {
       <FlatList
         ListHeaderComponent={() => (
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            {news_banner_data.map(bannerNews => (
+            {news_banner_data.map (bannerNews => (
               <Image
                 style={styles.banner_image}
                 source={{uri: bannerNews.imageUrl}}
