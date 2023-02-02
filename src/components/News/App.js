@@ -9,8 +9,7 @@ import {
   Dimensions,
   View
 } from 'react-native';
-import NewsCard from './components/NewsCard';
-
+import NewsCard from './';
 import news_data from './news_data.json';
 import news_banner_data from './news_banner_data.json';
 
