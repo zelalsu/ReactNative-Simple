@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FlatList, Text, TextInput, View } from 'react-native'
 import { StyleSheet } from 'react-native'
