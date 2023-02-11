@@ -5,6 +5,7 @@ import data from './data.json'
 import Product from './Product'
 
 
+
 function App() {
     const renderItem = ({ item }) => <Product news={item} />
 

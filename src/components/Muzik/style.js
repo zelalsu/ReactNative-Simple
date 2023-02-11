@@ -37,7 +37,6 @@ export default StyleSheet.create({
     },
     stock: {
         color: "red",
-       
         flex:1
 
     },
